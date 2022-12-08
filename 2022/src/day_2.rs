@@ -4,12 +4,11 @@ pub fn day_2() {
 }
 
 fn part_1() {
-    let lines = crate::utils::read_lines("./input-2").unwrap();
+    let lines = crate::utils::read_lines("./input-2");
 
     let mut score = 0;
     for line in lines {
-        let value = line.unwrap();
-        let mut tokens = value.split(" ");
+        let mut tokens = line.split(" ");
         let (a, b) = (tokens.next().unwrap(), tokens.next().unwrap());
 
         match (a, b) {
@@ -30,12 +29,11 @@ fn part_1() {
 }
 
 fn part_2() {
-    let lines = crate::utils::read_lines("./input-2").unwrap();
+    let lines = crate::utils::read_lines("./input-2");
 
     let mut score = 0;
     for line in lines {
-        let value = line.unwrap();
-        let mut tokens = value.split(" ");
+        let mut tokens = line.split(" ");
         let (a, b) = (tokens.next().unwrap(), tokens.next().unwrap());
 
         match (a, b) {

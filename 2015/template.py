@@ -1,4 +1,7 @@
-data = ''
+from utils import *
+from itertools import *
+
+data = read_lines(get_day(__file__))
 
 def step1():
     ...
